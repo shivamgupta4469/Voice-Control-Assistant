@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Voice Control Assistant — a Python desktop assistant with voice commands and local AI integrations.">
+<title>Voice Control Assistant | Shivam Gupta</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a30;--muted:#aab5cf;--text:#f4f7ff;--accent:#7c9cff;--line:#263451}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#1a2a52 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,Segoe UI,Arial,sans-serif}
+a{color:#b7c8ff}.wrap{max-width:1080px;margin:auto;padding:0 22px}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:.2px}.nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:14px}
+.hero{padding:88px 0 70px}.eyebrow{color:#9db5ff;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}.hero h1{font-size:clamp(42px,7vw,72px);line-height:1.05;max-width:850px;margin:18px 0}.hero p{color:var(--muted);font-size:19px;max-width:720px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 19px;border-radius:10px;text-decoration:none;font-weight:700;background:var(--accent);color:#081126}.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
+section{padding:48px 0;border-top:1px solid var(--line)}h2{font-size:30px;margin:0 0 18px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}.card{background:linear-gradient(145deg,#151f38,#10182b);border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{margin:0 0 8px}.tag{display:inline-block;border:1px solid var(--line);padding:5px 10px;border-radius:30px;color:#c4d1f7;font-size:12px;margin:4px 5px 4px 0}code{background:#202b45;padding:3px 7px;border-radius:6px;color:#dce5ff}pre{overflow:auto;background:#080d19;border:1px solid var(--line);padding:18px;border-radius:12px;color:#dce5ff}footer{padding:30px 0;color:var(--muted);border-top:1px solid var(--line);font-size:14px}
+@media(max-width:650px){.nav{align-items:flex-start;gap:12px;flex-direction:column}.nav a{margin:0 14px 0 0}.hero{padding:60px 0 45px}}
+</style>
+</head>
+<body>
+<header class="wrap nav"><div class="brand">🎙️ Voice Control Assistant</div><nav><a href="#features">Features</a><a href="#setup">Setup</a><a href="#architecture">Architecture</a></nav></header>
+<main>
+<div class="wrap hero">
+<div class="eyebrow">Python • Desktop Automation • Local AI</div>
+<h1>Your PC, controlled by your voice.</h1>
+<p>A Python-based desktop assistant project by Shivam Gupta. Explore voice-command automation, productivity utilities and optional local AI integrations.</p>
+<div class="actions"><a class="btn" href="https://github.com/shivamgupta4469/Voice-Control-Assistant">View source on GitHub ↗</a><a class="btn secondary" href="#setup">Get started</a></div>
+<div style="margin-top:25px"><span class="tag">Windows desktop app</span><span class="tag">Python</span><span class="tag">Vosk speech recognition</span><span class="tag">Ollama local AI</span></div>
+</div>
+<section id="features"><div class="wrap"><h2>Project highlights</h2><div class="grid">
+<div class="card"><h3>🎤 Voice commands</h3><p class="muted">Control supported desktop actions through spoken commands. Offline speech recognition can be configured with a Vosk model.</p></div>
+<div class="card"><h3>🧠 Local AI option</h3><p class="muted">Connect an Ollama model running on your own computer for local question answering and code-generation assistance.</p></div>
+<div class="card"><h3>🖥️ Desktop productivity</h3><p class="muted">A collection of desktop utilities and automation workflows, depending on the installed dependencies and permissions.</p></div>
+<div class="card"><h3>📄 Reading assistance</h3><p class="muted">PDF text extraction and optional screen OCR can be configured with the required local tools.</p></div>
+</div></div></section>
+<section id="architecture"><div class="wrap"><h2>How it works</h2><div class="grid">
+<div class="card"><h3>1. Desktop application</h3><p class="muted">Runs locally on Windows and accesses your microphone and desktop with your permission.</p></div>
+<div class="card"><h3>2. Optional local services</h3><p class="muted">Vosk and Ollama run on your PC. Model files are installed separately and are not included in this website.</p></div>
+<div class="card"><h3>3. Project website</h3><p class="muted">This static page is published using GitHub Pages. It documents the project; it does not run the desktop assistant.</p></div>
+</div></div></section>
+<section id="setup"><div class="wrap"><h2>Getting started</h2><p class="muted">Use the repository README as the source of truth for the latest installation instructions and dependency versions.</p>
+<pre><code>git clone https://github.com/shivamgupta4469/Voice-Control-Assistant.git
+cd Voice-Control-Assistant
+python -m pip install -r requirements.txt</code></pre>
+<p class="muted">For offline speech and local AI, install the required Vosk model and Ollama model as described in the repository setup guide. Some features may require internet access or additional Windows software.</p>
+<div class="actions"><a class="btn" href="https://github.com/shivamgupta4469/Voice-Control-Assistant">Open repository</a><a class="btn secondary" href="https://github.com/shivamgupta4469/Voice-Control-Assistant/issues">Report an issue</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">Built by Shivam Gupta · <a href="https://github.com/shivamgupta4469">GitHub profile</a><br><span>Project showcase only. The website does not access your microphone, files or computer.</span></div></footer>
+</body></html>
